@@ -14,6 +14,17 @@
     <link href="css/aos.css" rel="stylesheet">
     <!-- main style -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://www.javapoly.com/javapoly.js"></script>
+
+    <script type="text/java">
+      package com.javapoly.demo;
+      import com.javapoly.dom.Window;
+      public class HelloWorld {
+        public static void sayHello(String name) {
+        Window.alert("Hello " + name + ", from Java !");
+        }
+      }
+    </script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -454,13 +465,15 @@
             <h2><i>Palindrome<i></h2>
             <div class="h-50"></div>
             </br>
-
-            <figure>
-              <img src="img/challenge/screenshots/palindrome.PNG" style="vertical-align:middle;width:570px">
-              <figcaption>Palindrome Java Class - Completed 9/30/20</figcaption>
-            </figure>
                 
-                <applet code="Gui.class" width="640" height="480"></applet>
+            <script type="text/javascript">
+
+              JavaPoly.type('com.javapoly.demo.HelloWorld')
+                .then(function(greeter){
+                  greeter.sayHello('Riv!');
+                });
+
+            </script>  
 
             </br>
           </div>
